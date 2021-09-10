@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>html-css blog</title>
+    <meta charset="UTF-8">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap" rel="stylesheet">
+  
+  </head>
+  
+  <body>
+    <header>
+      <div class="header">
+        <h1>ER</h1>
+        <h5>emelene-remoroza</h5>
+      </div>
+      <br>
+      <nav>
+        <a id="tab" href="../index.html">HOME</a>
+        <a id="tab" href="blog.html">BLOG</a>
+      </nav>
+    </header>
+
+    <center>
+    <section class="blog-container">
+      <header>
+        <h2>The Position Property: static; relative; absolute; fixed;</h2>
+        <p class="p1-box">CSS position is one of the key topics in CSS which helps to understand how to place HTML elements at various locations on a page. Placing/Positioning HTML elements at correct places are the key to hold so many controls on a single page. </p>
+        <p class="p1-box">The <strong>position</strong> property specifies the type of positioning method used for an element. The different position values are:</p>
+      </header>
+
+      <div class="container">
+
+        <div id="left-box">
+          <h2>static</h2>
+          <p class="p2-box">This is the default CSS position applicable to all HTML elements. This position place the HTML elements based on normal document flow. Using this position, top/right/bottom/left properties can not be applicable to elements (ie., static position elements don’t obey top/right/bottom/left properties).</p></p>
+          <p class="p2-box"><em>Note: Page scrolling does affect this position.</em></p>
+          <br>
+          <img src="../images/static-position.PNG" alt="static position" style="width:200px; height:200px">
+        </div>
+        
+        <div id="right-box">
+          <h2>relative</h2>
+          <p class="p2-box">This position places the element relative to its normal position. This position is relative to normal document flow. Here top/right/bottom/left properties can be applied to elements.</p></p>
+          <p class="p2-box"><em>Note: Page scrolling does affect this position. If position only applied without top/right/bottom/left properties, it will act like Static position.</em></p>
+          <br>
+          <img src="../images/relative-position.PNG" alt="relative position" style="width:200px; height:200px">
+        </div>
+      </div>
+      
+      <div class="container">
+        <div id="left-box">
+          <h2>absolute</h2>
+          <p class="p2-box">This position places the element at the exact position specified.</p>
+          <p class="p2-box"><em>Note: Page scrolling does affect this position.This position element is completely removed from normal document flow.</em></p>
+          <br>
+          <img src="../images/absolute-position.PNG" alt="absolute position" style="width:200px; height:200px">
+        </div>
+        
+        <div id="right-box">
+          <h2>fixed</h2>
+          <p class="p2-box">This position places the element at a fixed place relative to the viewport. Page scrolling does not affect this position.</p>
+          <p class="p2-box"><em>Note: This position element is completely removed from normal document flow.</em></p>
+          <br>
+          <img src="../images/fixed-position.PNG" alt="fixed position" style="width:200px; height:200px">
+        </div>
+      </div>
+      <br>
+      
+      <div>
+        <h2 class="h2-box">1. position: static;</h2>
+        <p class="p1-box">The element is positioned according to the normal flow of the document. The top, right, bottom, left, and z-index properties have no effect. This is the default value.</p>
+        <p class="p2-box"><em>example of position: static;</em></p>
+        <img src="../images/static-example.PNG" alt="example of position: static;" style="width:80%; height:80%">
+        <br>
+        <br>
+        <h2 class="h2-box">2. position: relative;</h2>
+        <p class="p1-box">The element is positioned according to the normal flow of the document, and then offset relative to itself based on the values of top, right, bottom, and left. The offset does not affect the position of any other elements; thus, the space given for the element in the page layout is the same as if position were static.</p>
+        <p class="p2-box"><em>example of position: relative;</em></p>
+        <img src="../images/relative-example.PNG" alt="example of position: static;" style="width:80%; height:80%">
+        <br>
+        <br>
+        <h2 class="h2-box">3. position: absolute;</h2>
+        <p class="p1-box">The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to its closest positioned ancestor, if any; otherwise, it is placed relative to the initial containing block. Its final position is determined by the values of top, right, bottom, and left.</p>
+        <p class="p2-box"><em>example of position: absolute;</em></p>
+        <img src="../images/absolute.-example.PNG" alt="example of position: static;" style="width:80%; height:80%">
+        <br>
+        <br>
+        <h2 class="h2-box">4. position: fixed;</h2>
+        <p class="p1-box">The element is removed from the normal document flow, and no space is created for the element in the page layout. It is positioned relative to the initial containing block established by the viewport, except when one of its ancestors has a transform, perspective, or filter property set to something other than none (see the CSS Transforms Spec), in which case that ancestor behaves as the containing block. (Note that there are browser inconsistencies with perspective and filter contributing to containing block formation.) Its final position is determined by the values of top, right, bottom, and left.</p>
+        <p class="p2-box"><em>example of position: fixed;</em></p>
+        <img src="../images/fixed-example.PNG" alt="example of position: static;" style="width:80%; height:80%">
+      </div>
+    </section>
+    </center>
+    <br>
+  
+    <footer>
+      
+      <ul style=list-style:none class="footer">
+        <li><strong>Sources:</strong></li>
+        <li><a href="https://www.w3schools.com/css/css_positioning.asp" target="_blank">The Position Property</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">position - CSS|MDN</a></li>
+        <li><a href="https://www.csssolid.com/css-position.html" target="_blank">CSS Position</a></li>
+      </ul>
+    </footer>
+
+  </body>
+</html>
