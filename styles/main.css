@@ -53,6 +53,15 @@ p {
     word-wrap: break-word;
 }
 
+/* Section Header */
+
+.section-header {
+    font-family: 'Special Elite', cursive;
+    color: black;
+    font-size: 35px;
+    text-align: center;
+}
+
 /* Blog Containers*/ 
 
 .blog-container {
@@ -70,30 +79,32 @@ p {
 }
 
 .container {
-    width:880px;
+    width:860px;
     height:480px;
-    background-color: #EEEEEE;
     padding-top:20px;
     padding-left:15px;
     padding-right:15px;
+    position: relative;
 }
 
 
 #left-box {
     float:left;
-    width: 420px;px;
+    width: 410px;px;
     height:460px;
     background-color: #BBBBBB;
     border:solid #7e7e7e;
+    
 }
 
 #right-box {
     float:left;
-    width: 420px;
+    width: 410px;
     height:460px;
     background-color:#BBBBBB;
     border:solid #7e7e7e;
-    margin-left: 20px;
+    margin-left: 10px;
+    
 }
 
 .p1-box {
